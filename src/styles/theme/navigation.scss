@@ -1,0 +1,63 @@
+/*-------------------//
+// Navigation Styles //
+//-------------------*/
+
+.navbar.navbar-inverse{
+  min-height: 100px;
+}
+
+.nav-tabs {
+  display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  & > li {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    transform-origin: center center;
+    list-style-type: none;
+    & > a {
+      display: block;
+      padding: 0.6rem 1rem;
+    }
+  }
+}
+.nav-tabs{
+  border-left: 5px solid #000;
+  border-bottom: none;
+}
+
+.info{
+  font-family: "Courier New";
+}
+.line{
+  display: block;
+  width: 5em;
+  background: #fff;
+  height: 1px;
+  top: 62%;
+  position: relative;
+}
+.navbar-inverse .navbar-nav .nav-link{
+  color: #fff;
+  font-size: 1.4em;
+}
+.navbar-brand{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+}
+.brwnstn-nav:hover{
+  background-color: #424140;
+  opacity: 0.88;
+}
+.brwnstn-nav:hover > .navbar-brand{
+  color: #fff;
+}
+.brwnstn-nav:hover > .navbar-collapse{
+  opacity: 1;
+}
+.navbar-collapse{
+  opacity: 0;
+}
